@@ -24,17 +24,17 @@ Click the Block options and select the fields to include, under System Fields, C
 
 ### Filters
 
-The Filters drop-down will enable you to use a previously created "Saved Search" in your Wild Apricot system. The saved search will filter and create a member directory that will always reflect the latest membership data. When the "Saved Search" results changes, so does the member directory using this search.
+The Filters drop-down menu will enable you to use a previously created "Saved Search" in your Wild Apricot system. The saved search will filter and create a member directory, which will always reflect the latest membership data. When the "Saved Search" results changes, so does the member directory using this search.
 
-IMPORTANT: If you want to maintain member privacy, do not publicize the criteria of a saved search. As in Wild Apricot, members will appear in a saved searchs, regardless of the field used for the filter. An example of how publicizing the saved search criterial could expose sensitive member information: if there is a field "Number of Guns Owned", and a filter for "Guns > 0" was used for a member directory, and the saved search was publicized, that would expose the members who pass this criteria even if the Number of Guns Owned field was not in the member directory layout.
+IMPORTANT: If you want to maintain member privacy, do not publicize the criteria of a saved search. As in Wild Apricot, members will appear in a saved search, regardless of the field used for the filter. An example of how publicizing the saved search criteria could expose sensitive member information: if there is a field "Number of Guns Owned", and a filter for "Guns > 0" was used for a member directory, and the saved search was publicized, that would expose the members password and criteria, even if the "Number of Guns Owned" field was not in the member directory layout.
 
 ### Enable Search
 
-You can also enable a quick search of the member directory to visitors. All the fields in the member directory will be searched. Any fields *not* included in the direcory will not be searchable.
+You can also enable a quick search of the member directory to visitors. All the fields in the member directory will be searched. Any fields *not* included in the direcory, will not be searchable.
 
 ### Profile Link
 
-To allow a visitor to click to a more detailed profile of a member, select the profile link toggle. Use the "User Profile" fields to select which fields you would like to show in the single member profile.
+To allow a visitor to click to a more detailed profile of a member, select the profile link toggle. Use the "User Profile" fields to select which fields you would like, to show in the single member profile.
 
 ### Page Size
 
@@ -42,13 +42,12 @@ The page size option can be used to restrict how many members are shown on one p
 
 ### Hide Restricted Fields
 
-This toggle will hide any privacy-restriced fields from showing in the member directory (ie member information can only be viewed by members). This is controlled by contact and global privacy settings in Wild Apricot. For security, fields that are set to "admin only" cannot be viewed in the member directory block.
+This toggle will hide any privacy-restriced fields from showing in the member directory (ie member information can only be viewed by members). This is controlled by contact and global privacy settings, in Wild Apricot. For security, fields that are set to "admin only" cannot be viewed in the member directory block.
 
 <img width="953" alt="member profile block configuration options" src="https://user-images.githubusercontent.com/458134/131162876-cb02ccf9-6921-4c06-bd89-d59025bb03bb.png">
 
 
 ## Member Directory Shortcode
-
 The `wa-contact` shortcode is built dynamically, based on the options selected under the block.
 
 The below syntax is built automatically by the block, but it can be included manually, into any block or content area in WordPress.
@@ -60,8 +59,7 @@ The `profile` and `hide_restricted_fields` can be used to turn on these options.
 
 
 # Configuring the WAP Member Profile Block
-
-To configure a member profile block, select system fields, common fields and membership fields, from your Wild Apricot database. These will be included in the single profile.
+To configure a member profile block, select system fields > common fields > membership fields, from your Wild Apricot database. These will be included in the single profile.
 
 ### Block Options
 Click the Block options and select the fields to include under "System Fields", "Common Fields" and "Member Fields".
@@ -71,13 +69,13 @@ Click the Block options and select the fields to include under "System Fields", 
 
 ### Hide Restricted Fields
 
-This toggle will only allow users to view content, respective to their levels, ie member information can only be viewed by members. This is controlled by user and global privacy settings from Wild Apricot. For security, admin only information cannot be viewed through this block, please access this directly through Wild Apricot. 
+This toggle will only allow users to view content, respective to their levels, ie member information can only be viewed by members. This is controlled by user and global privacy settings from Wild Apricot. For security reasons, admin only information cannot be viewed through this block, please access this directly through Wild Apricot. 
 
 ## Member Profile Shortcode
 
-The `wa-profile` shortcode is built dynamically based on the options selected under block.
+The `wa-profile` shortcode is built dynamically, based on the options selected under block.
 
-The below syntax is built automatically by the block but it can be included manually into any block or content area in WordPress.
+The below syntax is built automatically by the block, but it can be included manually into any block or content area in WordPress.
 
 `[wa-profile <database fields> user-id=<Wild Apricot UserID> hide_restricted_fields]`
 
@@ -85,7 +83,7 @@ The `hide_restricted_fields` can be used to turn on this option.
 
 ## Customizing the CSS
 
-Each element in the member directory and member profile has a unique CSS class inserted which can be customized in the CSS style sheet.
+Each element in the member directory and member profile has a unique CSS class inserted, which can be customized in the CSS style sheet.
 
 ### Member Directory IDs and Classes
 
@@ -107,7 +105,7 @@ The following IDs contain the various block options:
 <div id="hide_restricted_fields" data-hide-restricted-fields="false"></div>
 ```
 
-All contacts will be paginated in the class `wa-contacts`. The pagination will be contained in a class called `wa-pagination`. Each page of the pagination is in a class called `wa-pagination-page`. Each contact or member is in a class called `wa-contact`. Each field value will use the class of the field name as well as a custom attribute called `wa-data-label` with the name of the field as the value.
+All contacts will be paginated in the class `wa-contacts`. The pagination will be contained in a class called `wa-pagination`. Each page of the pagination is in a class called `wa-pagination-page`. Each contact or member is in a class called `wa-contact`. Each field value will use the class of the field name, as well as a custom attribute called `wa-data-label` with the name of the field as the value.
 
 Here is an example of a `wa-contact` element which contains one member and the View profile link.
 
@@ -122,9 +120,9 @@ Here is an example of a `wa-contact` element which contains one member and the V
 
 ### Member Profile IDs and Classes
 
-The member profile will be rendered using a class called `wa-profile`.
+The member profile will be rendered, using a class called `wa-profile`.
 
-Each field will have an ID using the same name of the field. For example here is a profile with just the `City` field, and the value `Toronto`:
+Each field will have an ID using the same name of the field. For example, here is a profile with just the `City` field, and the value `Toronto`:
 
 ```
 <div id="city" class="field">
